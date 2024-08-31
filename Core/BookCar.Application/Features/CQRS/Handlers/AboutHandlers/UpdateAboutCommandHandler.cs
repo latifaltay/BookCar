@@ -24,7 +24,7 @@ namespace BookCar.Application.Features.CQRS.Handlers.AboutHandlers
             values.Description = command.Description;
             values.Title = command.Title;
             values.ImageUrl = command.ImageUrl;
-            _repository.UpdateAsync(values);
+            await _repository.UpdateAsync(values);
         }
 
     }
