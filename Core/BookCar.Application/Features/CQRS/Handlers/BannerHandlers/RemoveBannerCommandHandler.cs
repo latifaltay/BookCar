@@ -21,7 +21,7 @@ namespace BookCar.Application.Features.CQRS.Handlers.BannerHandlers
 
         public async Task Handle(RemoveBannerCommand command) 
         {
-            var value = await _repository.GetByIdAsync(command.Id);,
+            var value = await _repository.GetByIdAsync(command.Id);
             await _repository.RemoveAsync(value);
         }
 
