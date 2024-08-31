@@ -1,0 +1,16 @@
+C:\Users\ELEYDEV\Desktop\BookCar\Core\BookCar.Application\bin\Debug\net8.0\BookCar.Application.deps.json
+C:\Users\ELEYDEV\Desktop\BookCar\Core\BookCar.Application\bin\Debug\net8.0\BookCar.Application.dll
+C:\Users\ELEYDEV\Desktop\BookCar\Core\BookCar.Application\bin\Debug\net8.0\BookCar.Application.pdb
+C:\Users\ELEYDEV\Desktop\BookCar\Core\BookCar.Application\bin\Debug\net8.0\BookCar.Domain.dll
+C:\Users\ELEYDEV\Desktop\BookCar\Core\BookCar.Application\bin\Debug\net8.0\BookCar.Domain.pdb
+C:\Users\ELEYDEV\Desktop\BookCar\Core\BookCar.Application\obj\Debug\net8.0\BookCar.Application.csproj.AssemblyReference.cache
+C:\Users\ELEYDEV\Desktop\BookCar\Core\BookCar.Application\obj\Debug\net8.0\BookCar.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ELEYDEV\Desktop\BookCar\Core\BookCar.Application\obj\Debug\net8.0\BookCar.Application.AssemblyInfoInputs.cache
+C:\Users\ELEYDEV\Desktop\BookCar\Core\BookCar.Application\obj\Debug\net8.0\BookCar.Application.AssemblyInfo.cs
+C:\Users\ELEYDEV\Desktop\BookCar\Core\BookCar.Application\obj\Debug\net8.0\BookCar.Application.csproj.CoreCompileInputs.cache
+C:\Users\ELEYDEV\Desktop\BookCar\Core\BookCar.Application\obj\Debug\net8.0\BookCar.Application.sourcelink.json
+C:\Users\ELEYDEV\Desktop\BookCar\Core\BookCar.Application\obj\Debug\net8.0\BookCar.Application.csproj.CopyComplete
+C:\Users\ELEYDEV\Desktop\BookCar\Core\BookCar.Application\obj\Debug\net8.0\BookCar.Application.dll
+C:\Users\ELEYDEV\Desktop\BookCar\Core\BookCar.Application\obj\Debug\net8.0\refint\BookCar.Application.dll
+C:\Users\ELEYDEV\Desktop\BookCar\Core\BookCar.Application\obj\Debug\net8.0\BookCar.Application.pdb
+C:\Users\ELEYDEV\Desktop\BookCar\Core\BookCar.Application\obj\Debug\net8.0\ref\BookCar.Application.dll

@@ -16,3 +16,5 @@ C:\Users\ELEYDEV\Desktop\BookCar\Infrastructure\BookCar.Persistence\obj\Debug\ne
 C:\Users\ELEYDEV\Desktop\BookCar\Infrastructure\BookCar.Persistence\obj\Debug\net8.0\BookCar.Persistence.pdb
 C:\Users\ELEYDEV\Desktop\BookCar\Infrastructure\BookCar.Persistence\obj\Debug\net8.0\BookCar.Persistence.genruntimeconfig.cache
 C:\Users\ELEYDEV\Desktop\BookCar\Infrastructure\BookCar.Persistence\obj\Debug\net8.0\ref\BookCar.Persistence.dll
+C:\Users\ELEYDEV\Desktop\BookCar\Infrastructure\BookCar.Persistence\bin\Debug\net8.0\BookCar.Application.dll
+C:\Users\ELEYDEV\Desktop\BookCar\Infrastructure\BookCar.Persistence\bin\Debug\net8.0\BookCar.Application.pdb

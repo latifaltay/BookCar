@@ -1503,6 +1503,19 @@
           }
         }
       },
+      "BookCar.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "BookCar.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BookCar.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BookCar.Application.dll": {}
+        }
+      },
       "BookCar.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -4107,6 +4120,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "BookCar.Application/1.0.0": {
+      "type": "project",
+      "path": "../../Core/BookCar.Application/BookCar.Application.csproj",
+      "msbuildProject": "../../Core/BookCar.Application/BookCar.Application.csproj"
+    },
     "BookCar.Domain/1.0.0": {
       "type": "project",
       "path": "../../BookCar.Domain/BookCar.Domain.csproj",
@@ -4115,6 +4133,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "BookCar.Application >= 1.0.0",
       "BookCar.Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 8.0.8",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.8",
@@ -4151,6 +4170,9 @@
           "projectReferences": {
             "C:\\Users\\ELEYDEV\\Desktop\\BookCar\\BookCar.Domain\\BookCar.Domain.csproj": {
               "projectPath": "C:\\Users\\ELEYDEV\\Desktop\\BookCar\\BookCar.Domain\\BookCar.Domain.csproj"
+            },
+            "C:\\Users\\ELEYDEV\\Desktop\\BookCar\\Core\\BookCar.Application\\BookCar.Application.csproj": {
+              "projectPath": "C:\\Users\\ELEYDEV\\Desktop\\BookCar\\Core\\BookCar.Application\\BookCar.Application.csproj"
             }
           }
         }
