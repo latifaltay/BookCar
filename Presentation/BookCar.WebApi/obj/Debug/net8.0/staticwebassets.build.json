@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "aRkFhrcI88u/1a4zYcomSEgc7qM89y7258J2kY8UQgQ=",
+  "Source": "BookCar.WebApi",
+  "BasePath": "_content/BookCar.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
