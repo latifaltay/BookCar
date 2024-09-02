@@ -134,7 +134,6 @@ C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\obj\Debug\net8.0\st
 C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BookCar.WebApi.props
 C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\obj\Debug\net8.0\scopedcss\bundle\BookCar.WebApi.styles.css
-C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\obj\Debug\net8.0\BookCar.WebApi.csproj.CopyComplete
 C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\obj\Debug\net8.0\BookCar.WebApi.dll
 C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\obj\Debug\net8.0\refint\BookCar.WebApi.dll
 C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\obj\Debug\net8.0\BookCar.WebApi.pdb
@@ -142,3 +141,4 @@ C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\obj\Debug\net8.0\Bo
 C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\obj\Debug\net8.0\ref\BookCar.WebApi.dll
 C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\bin\Debug\net8.0\BookCar.Application.dll
 C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\bin\Debug\net8.0\BookCar.Application.pdb
+C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\obj\Debug\net8.0\BookCar..574BA9CC.Up2Date
