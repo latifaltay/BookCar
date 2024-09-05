@@ -2,9 +2,12 @@
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.Metrics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace BookCar.Persistence.Context
 {
@@ -12,7 +15,8 @@ namespace BookCar.Persistence.Context
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=DESKTOP-VCQ63AG; initial Catalog = BookCarDb; integrated Security = true; TrustServerCertificate = true ");
+            //optionsBuilder.UseSqlServer("Server=DESKTOP-VCQ63AG; initial Catalog = BookCarDb; integrated Security = true; TrustServerCertificate = true ");
+            optionsBuilder.UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB;; initial Catalog = BookCarDb; integrated Security = true; TrustServerCertificate = true ");
         }
         public DbSet<About> Abouts { get; set; }
         public DbSet<Banner> Banners { get; set; }
