@@ -38,7 +38,7 @@ namespace BookCar.WebApi.Controllers
             return Ok(values);
         }
 
-        [HttpPost("{id}")]
+        [HttpGet("{id}")]
         public async Task<IActionResult> GetBrand(int id)
         {
             var value = await _getBrandByIdQueryHandler.Handle(new GetBrandByIdQuery(id));
