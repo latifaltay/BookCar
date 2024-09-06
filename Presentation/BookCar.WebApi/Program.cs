@@ -2,7 +2,9 @@ using BookCar.Application.Features.CQRS.Handlers.AboutHandlers;
 using BookCar.Application.Features.CQRS.Handlers.BannerHandlers;
 using BookCar.Application.Features.CQRS.Handlers.BrandHandlers;
 using BookCar.Application.Features.CQRS.Handlers.CarHandlers;
+using BookCar.Application.Features.CQRS.Handlers.CategoryHandlers;
 using BookCar.Application.Interfaces;
+using BookCar.Application.Interfaces.CarInterfaces;
 using BookCar.Persistence.Context;
 using BookCar.Persistence.Repositories;
 
@@ -11,12 +13,14 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddScoped<BookCarContext>();
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+builder.Services.AddScoped(typeof(ICarRepository), typeof(CarRepository));
 
 builder.Services.AddScoped<GetAboutQueryHandler>();
 builder.Services.AddScoped<GetAboutByIdQueryHandler>();
 builder.Services.AddScoped<CreateAboutCommandHandler>();
 builder.Services.AddScoped<UpdateAboutCommandHandler>();
 builder.Services.AddScoped<RemoveAboutCommandHandler>();
+builder.Services.AddScoped<GetCarWithBrandQueryHandler>();
 
 
 builder.Services.AddScoped<GetBannerQueryHandler>();
@@ -37,10 +41,17 @@ builder.Services.AddScoped<CreateCarCommandHandler>();
 builder.Services.AddScoped<UpdateCarCommandHandler>();
 builder.Services.AddScoped<RemoveCarCommandHandler>();
 
+builder.Services.AddScoped<GetCategoryQueryHandler>();
+builder.Services.AddScoped<GetCategoryByIdQueryHandler>();
+builder.Services.AddScoped<CreateCategoryCommandHandler>();
+builder.Services.AddScoped<UpdateCategoryCommandHandler>();
+builder.Services.AddScoped<RemoveCategoryCommandHandler>();
+
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen();  
 
 var app = builder.Build();
 

@@ -21,8 +21,8 @@ namespace BookCar.Application.Features.CQRS.Handlers.CarHandlers
 
         public async Task<List<GetCarQueryResult>> Handle()
         {
-            var valeus = await _repository.GetAllAsync();
-            return valeus.Select(x => new GetCarQueryResult
+            var values = await _repository.GetAllAsync();
+            return values.Select(x => new GetCarQueryResult
             {
                 CarId = x.CarId,
                 BrandId = x.BrandId,
