@@ -21,7 +21,7 @@ namespace BookCar.WebApi.Controllers
     {
 
         [HttpGet]
-        public async Task<IActionResult> GetCategories()
+        public async Task<IActionResult> CategoryList()
         {
             var values = await _getCategoryQueryHandler.Handle();
             return Ok(values);
@@ -29,7 +29,7 @@ namespace BookCar.WebApi.Controllers
 
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetCategoryById(int id) 
+        public async Task<IActionResult> GetCategory(int id) 
         {
             var value = await _getCategoryByIdQueryHandler.Handle(new GetCategoryByIdQuery(id));
             return Ok(value);
@@ -40,15 +40,15 @@ namespace BookCar.WebApi.Controllers
         public async Task<IActionResult> CreateCategory(CreateCategoryCommand command) 
         {
             await _createCategoryCommandHandler.Handle(command);
-            return Ok();
+            return Ok("Kategori Bilgisi Oluşturuldu!");
         }
 
-        
+
         [HttpDelete]
         public async Task<IActionResult> DeleteCategory(RemoveCategoryCommand command) 
         {
             await _removeCategoryCommandHandler.Handle(command);
-            return Ok();
+            return Ok("Kategori Bilgisi Silindi!");
         }
 
 
@@ -56,8 +56,8 @@ namespace BookCar.WebApi.Controllers
         public async Task<IActionResult> UpdateCategory(UpdateCategoryCommand command) 
         {
             await _updateCategoryCommandHandler.Handle(command);
-            return Ok();
+            return Ok("Kategori Bilgisi Güncellendi!");
         }
 
-}
+    }
 }
