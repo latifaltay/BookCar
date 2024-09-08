@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "6s3WLiCzLFbpigHYxX90JKTFBTgQU/ypFhJS95jnGvaju6bjoMiedNbVJj0I7Xymspwaab+EkSOYp1rqZ5p3FQ==",
+  "dgSpecHash": "d8sACJG37exbPixruOKkfvUUGPxTGIsYq5Zh2z5o66BA891B8nLmwFMXBVI0EuvHk+va3kqu2CBTvB6JLPSycg==",
   "success": true,
   "projectFilePath": "C:\\Users\\ELEYDEV\\Desktop\\BookCar\\Core\\BookCar.Application\\BookCar.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ELEYDEV\\.nuget\\packages\\mediatr\\12.4.0\\mediatr.12.4.0.nupkg.sha512",
+    "C:\\Users\\ELEYDEV\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\ELEYDEV\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
