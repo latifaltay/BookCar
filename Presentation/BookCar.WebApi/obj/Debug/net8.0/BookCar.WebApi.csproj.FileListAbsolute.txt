@@ -142,3 +142,6 @@ C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\obj\Debug\net8.0\re
 C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\bin\Debug\net8.0\BookCar.Application.dll
 C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\bin\Debug\net8.0\BookCar.Application.pdb
 C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\obj\Debug\net8.0\BookCar.WebApi.csproj.CopyComplete
+C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\bin\Debug\net8.0\MediatR.dll
+C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\bin\Debug\net8.0\MediatR.Contracts.dll
+C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\bin\Debug\net8.0\MediatR.Extensions.Microsoft.DependencyInjection.dll

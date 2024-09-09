@@ -13,9 +13,9 @@ namespace BookCar.Application.Features.CQRS.Handlers.CategoryHandlers
     {
         public async Task Handle(UpdateCategoryCommand command) 
         {
-            var value = await _repository.GetByIdAsync(command.CategoryId);
-            value.Name = command.Name;
-            await _repository.UpdateAsync(value);
+            var values = await _repository.GetByIdAsync(command.CategoryId);
+            values.Name = command.Name;
+            await _repository.UpdateAsync(values);
         }
     }
 }
