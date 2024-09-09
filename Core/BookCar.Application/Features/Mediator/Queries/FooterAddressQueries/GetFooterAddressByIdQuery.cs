@@ -1,4 +1,4 @@
-﻿using BookCar.Application.Features.Mediator.Results.FooterAddressResult;
+﻿using BookCar.Application.Features.Mediator.Results.FooterAddressResults;
 using MediatR;
 using System;
 using System.Collections.Generic;

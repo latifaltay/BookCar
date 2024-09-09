@@ -1,5 +1,5 @@
 ﻿using BookCar.Application.Features.Mediator.Queries.FooterAddressQueries;
-using BookCar.Application.Features.Mediator.Results.FooterAddressResult;
+using BookCar.Application.Features.Mediator.Results.FooterAddressResults;
 using BookCar.Application.Interfaces;
 using BookCar.Domain.Entities;
 using MediatR;

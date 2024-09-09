@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BookCar.Application.Features.Mediator.Results.FooterAddressResult
+namespace BookCar.Application.Features.Mediator.Results.FooterAddressResults
 {
-    public class GetFooterAddressByIdQueryResult
+    public class GetFooterAddressQueryResult
     {
         public int FooterAddressId { get; set; }
         public string Description { get; set; }
