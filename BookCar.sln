@@ -9,13 +9,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookCar.Domain", "BookCar.D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{51312DBD-AD54-4C4E-832A-955054CEF348}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookCar.Persistence", "Infrastructure\BookCar.Persistence\BookCar.Persistence.csproj", "{4523A542-BC75-43F4-99A6-CABA76E52416}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookCar.Persistence", "Infrastructure\BookCar.Persistence\BookCar.Persistence.csproj", "{4523A542-BC75-43F4-99A6-CABA76E52416}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{D0AE3E10-A928-453F-882D-CC47183F33BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookCar.WebApi", "Presentation\BookCar.WebApi\BookCar.WebApi.csproj", "{E7BF0720-A496-42FA-B227-D0BCF6A485FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookCar.WebApi", "Presentation\BookCar.WebApi\BookCar.WebApi.csproj", "{E7BF0720-A496-42FA-B227-D0BCF6A485FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookCar.Application", "Core\BookCar.Application\BookCar.Application.csproj", "{5A43D7E5-6FAF-4AD7-A3E1-2F089BD7182A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookCar.Application", "Core\BookCar.Application\BookCar.Application.csproj", "{5A43D7E5-6FAF-4AD7-A3E1-2F089BD7182A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontends", "Frontends", "{78553A0F-6977-4F06-87CF-231AEAD573FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookCar.WebUI", "Frontends\BookCar.WebUI\BookCar.WebUI.csproj", "{F1C05B03-4672-466F-925F-74F51F1EE453}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,10 @@ Global
 		{5A43D7E5-6FAF-4AD7-A3E1-2F089BD7182A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A43D7E5-6FAF-4AD7-A3E1-2F089BD7182A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A43D7E5-6FAF-4AD7-A3E1-2F089BD7182A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1C05B03-4672-466F-925F-74F51F1EE453}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1C05B03-4672-466F-925F-74F51F1EE453}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1C05B03-4672-466F-925F-74F51F1EE453}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1C05B03-4672-466F-925F-74F51F1EE453}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +56,7 @@ Global
 		{4523A542-BC75-43F4-99A6-CABA76E52416} = {51312DBD-AD54-4C4E-832A-955054CEF348}
 		{E7BF0720-A496-42FA-B227-D0BCF6A485FF} = {D0AE3E10-A928-453F-882D-CC47183F33BC}
 		{5A43D7E5-6FAF-4AD7-A3E1-2F089BD7182A} = {925F7276-CE4F-4334-8933-3681F13637B6}
+		{F1C05B03-4672-466F-925F-74F51F1EE453} = {78553A0F-6977-4F06-87CF-231AEAD573FC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {35CB94BB-BAB3-4299-BB98-4D63FEE00325}
