@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\BookCar.WebUI.props" />
+</Project>
