@@ -306,6 +306,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "BookCar.WebApi.Controllers.CarsController",
+    "Method": "GetLast5CarsWithBrandQueryHandler",
+    "RelativePath": "api/Cars/GetLast5CarsWithBrandQueryHandler",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "BookCar.WebApi.Controllers.CategoriesController",
     "Method": "CategoryList",
     "RelativePath": "api/Categories",
