@@ -8,16 +8,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BookCar.Persistence.Repositories
+namespace BookCar.Persistence.Repositories.CarRepositories
 {
     public class CarRepository(BookCarContext _context) : ICarRepository
     {
         //private readonly BookCarContext _context;
         public List<Car> GetCarsListWithBrands()
         {
-            var valeus = _context.Cars.Include(c => c.Brand).ToList();  
+            var valeus = _context.Cars.Include(c => c.Brand).ToList();
             return valeus;
         }
+
+        //public List<CarPricing> GetCarsWithPricings()
+        //{
+        //    var values = _context.CarPricings.Include(x => x.Car).ThenInclude(x => x.Brand).Include(x => x.Pricing).ToList();
+        //    return values;
+        //}
 
         public List<Car> GetLast5CarsWithBrands()
         {

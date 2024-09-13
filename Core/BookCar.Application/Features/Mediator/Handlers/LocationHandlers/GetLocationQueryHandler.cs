@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace BookCar.Application.Features.Mediator.Handlers.LocationHandlers
 {
-    public class GetLocationQueryHandler(IRepository<Location> _repository) : IRequestHandler<GetLocationQuery, List<GetLocationQueryResult>>
+    public class GetAuthorQueryHandler(IRepository<Location> _repository) : IRequestHandler<GetLocationQuery, List<GetLocationQueryResult>>
     {
         public async Task<List<GetLocationQueryResult>> Handle(GetLocationQuery request, CancellationToken cancellationToken)
         {
