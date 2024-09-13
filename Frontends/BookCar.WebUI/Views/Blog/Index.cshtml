@@ -4,9 +4,11 @@
     Layout = "~/Views/UILayout/Index.cshtml";
 }
 
+
 <section class="ftco-section">
     <div class="container">
         <div class="row d-flex justify-content-center">
+
             @foreach (var item in Model)
             {
                 <div class="col-md-12 text-center d-flex ftco-animate">
@@ -20,13 +22,15 @@
                                 <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
                             </div>
                             <h3 class="heading mt-2"><a href="#">@item.Title</a></h3>
-                            <p>@item.Description</p>
-                            <p><a href="/Blog/BlogDetail/@item.BlogId" class="btn btn-primary">Devamını Oku <span class="icon-long-arrow-right"></span></a></p>
+                            <p>@item.BlogDescription</p>
+                            <p><a href="blog-single.html" class="btn btn-primary">Devamını Oku <span class="icon-long-arrow-right"></span></a></p>
                         </div>
                     </div>
                 </div>
-            }
-        </div>
 
+
+            }
+
+        </div>
     </div>
 </section>

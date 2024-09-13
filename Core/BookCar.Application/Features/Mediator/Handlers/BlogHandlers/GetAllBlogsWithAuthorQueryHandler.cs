@@ -25,7 +25,7 @@ namespace BookCar.Application.Features.Mediator.Handlers.BlogHandlers
                 CoverImageUrl = x.CoverImageUrl,
                 CreatedDate = x.CreatedDate,
                 Title = x.Title,
-                Description = x.Description,
+                BlogDescription = x.BlogDescription,
             }).ToList();
         }
     }
