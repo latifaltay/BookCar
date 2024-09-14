@@ -15,13 +15,15 @@ namespace BookCar.WebUI.Controllers
 
 
             var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync("https://localhost:7028/api/GetAllBlogsWithAuthorList");
+            var responseMessage = await client.GetAsync("https://localhost:7028/api/Blogs/GetAllBlogsWithAuthorList");
             if (responseMessage.IsSuccessStatusCode)
             {
                 var jsonData = await responseMessage.Content.ReadAsStringAsync();
                 var values = JsonConvert.DeserializeObject<List<ResultAllBlogsWithAuthorDto>>(jsonData);
                 return View(values);
             }
+            //var test = new List<ResultAllBlogsWithAuthorDto>();
+            //return View(test);
             return View();
         }
     }
