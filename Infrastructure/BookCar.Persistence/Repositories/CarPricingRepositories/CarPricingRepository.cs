@@ -14,12 +14,10 @@ namespace BookCar.Persistence.Repositories.CarPricingRepositories
     {
         public List<CarPricing> GetCarPricingsWithCars()
         {
-            //var values = _context.CarPricings.Include(x => x.Car).ThenInclude(y => y.Brand).Include(x => x.Pricing).Where(z => z.PricingId == 2).ToList();
-            var values = _context.CarPricings.Include(x => x.Car).ThenInclude(y => y.Brand).Include(x => x.Pricing).Where(z => z.PricingId == 1).ToList();
-            // sorulacak
-            // Entity ismi değiştirildi bir sıkıntı var mı?
-            // yalnızca 5 araç geliyor sonra eklememe rağmen yenisi gelmiyor (çözüldü)
-            return values;   
+            var values = _context.CarPricings.Include(x => x.Car).ThenInclude(y => y.Brand).Include(x => x.Pricing).Where(z => z.PricingId == 1);
+            // Yukarıdaki ef core sorgusunu sql sorgusuna çeviren bir method
+            var test = values.ToQueryString();
+            return values.ToList();   
         }
     }
 }
