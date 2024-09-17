@@ -8,6 +8,9 @@ C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\bin\Debug\net8.0\Bo
 C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\bin\Debug\net8.0\Azure.Identity.dll
 C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\bin\Debug\net8.0\Humanizer.dll
+C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\bin\Debug\net8.0\MediatR.dll
+C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\bin\Debug\net8.0\MediatR.Contracts.dll
+C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\bin\Debug\net8.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
 C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
@@ -113,9 +116,11 @@ C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\bin\Debug\net8.0\ru
 C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\bin\Debug\net8.0\BookCar.Application.dll
 C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\bin\Debug\net8.0\BookCar.Domain.dll
 C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\bin\Debug\net8.0\BookCar.Persistence.dll
 C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\bin\Debug\net8.0\BookCar.Persistence.pdb
+C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\bin\Debug\net8.0\BookCar.Application.pdb
 C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\bin\Debug\net8.0\BookCar.Domain.pdb
 C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\obj\Debug\net8.0\BookCar.WebApi.csproj.AssemblyReference.cache
 C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\obj\Debug\net8.0\BookCar.WebApi.GeneratedMSBuildEditorConfig.editorconfig
@@ -133,14 +138,9 @@ C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\obj\Debug\net8.0\st
 C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BookCar.WebApi.props
 C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\obj\Debug\net8.0\scopedcss\bundle\BookCar.WebApi.styles.css
+C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\obj\Debug\net8.0\BookCar..574BA9CC.Up2Date
 C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\obj\Debug\net8.0\BookCar.WebApi.dll
 C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\obj\Debug\net8.0\refint\BookCar.WebApi.dll
 C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\obj\Debug\net8.0\BookCar.WebApi.pdb
 C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\obj\Debug\net8.0\BookCar.WebApi.genruntimeconfig.cache
 C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\obj\Debug\net8.0\ref\BookCar.WebApi.dll
-C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\bin\Debug\net8.0\BookCar.Application.dll
-C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\bin\Debug\net8.0\BookCar.Application.pdb
-C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\bin\Debug\net8.0\MediatR.dll
-C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\bin\Debug\net8.0\MediatR.Contracts.dll
-C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\bin\Debug\net8.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
-C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\obj\Debug\net8.0\BookCar..574BA9CC.Up2Date
