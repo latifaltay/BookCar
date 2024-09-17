@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BookCar.Dto")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+456649de01e3c425331052bb45fde94d16f2c6a8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7e551d54dbe59e84541db3aa90242f8df933ce5c")]
 [assembly: System.Reflection.AssemblyProductAttribute("BookCar.Dto")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BookCar.Dto")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
