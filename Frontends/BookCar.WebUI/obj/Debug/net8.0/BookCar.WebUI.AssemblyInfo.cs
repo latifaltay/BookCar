@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BookCar.WebUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b1bdecb644be8220303a02e448a9460212bc51ec")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4c0b3a8ccd262addbe8048602fd74e5131d57137")]
 [assembly: System.Reflection.AssemblyProductAttribute("BookCar.WebUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BookCar.WebUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

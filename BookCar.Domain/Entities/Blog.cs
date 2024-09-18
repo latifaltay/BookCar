@@ -17,5 +17,6 @@ namespace BookCar.Domain.Entities
         public int CategoryId{ get; set; }
         public Category Category { get; set; }
         public string BlogDescription { get; set; }
+        public List<TagCloud> TagClouds { get; set; }
     }
 }

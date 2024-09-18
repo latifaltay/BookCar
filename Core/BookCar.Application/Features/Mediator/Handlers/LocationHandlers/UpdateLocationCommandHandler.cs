@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace BookCar.Application.Features.Mediator.Handlers.LocationHandlers
 {
-    public class UpdateAuthorCommandHandler(IRepository<Location> _repository) : IRequestHandler<UpdateLocationCommand>
+    public class UpdateLocationCommandHandler(IRepository<Location> _repository) : IRequestHandler<UpdateLocationCommand>
     {
         public async Task Handle(UpdateLocationCommand request, CancellationToken cancellationToken)
         {

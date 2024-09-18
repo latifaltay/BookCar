@@ -44,7 +44,7 @@ namespace BookCar.Persistence.Migrations
 
                     b.HasKey("AboutId");
 
-                    b.ToTable("Abouts", (string)null);
+                    b.ToTable("Abouts");
                 });
 
             modelBuilder.Entity("BookCar.Domain.Entities.Author", b =>
@@ -69,7 +69,7 @@ namespace BookCar.Persistence.Migrations
 
                     b.HasKey("AuthorId");
 
-                    b.ToTable("Authors", (string)null);
+                    b.ToTable("Authors");
                 });
 
             modelBuilder.Entity("BookCar.Domain.Entities.Banner", b =>
@@ -98,7 +98,7 @@ namespace BookCar.Persistence.Migrations
 
                     b.HasKey("BannerId");
 
-                    b.ToTable("Banners", (string)null);
+                    b.ToTable("Banners");
                 });
 
             modelBuilder.Entity("BookCar.Domain.Entities.Blog", b =>
@@ -136,7 +136,7 @@ namespace BookCar.Persistence.Migrations
 
                     b.HasIndex("CategoryId");
 
-                    b.ToTable("Blogs", (string)null);
+                    b.ToTable("Blogs");
                 });
 
             modelBuilder.Entity("BookCar.Domain.Entities.Brand", b =>
@@ -153,7 +153,7 @@ namespace BookCar.Persistence.Migrations
 
                     b.HasKey("BrandId");
 
-                    b.ToTable("Brands", (string)null);
+                    b.ToTable("Brands");
                 });
 
             modelBuilder.Entity("BookCar.Domain.Entities.Car", b =>
@@ -200,7 +200,7 @@ namespace BookCar.Persistence.Migrations
 
                     b.HasIndex("BrandId");
 
-                    b.ToTable("Cars", (string)null);
+                    b.ToTable("Cars");
                 });
 
             modelBuilder.Entity("BookCar.Domain.Entities.CarDescription", b =>
@@ -222,7 +222,7 @@ namespace BookCar.Persistence.Migrations
 
                     b.HasIndex("CarId");
 
-                    b.ToTable("CarDescriptions", (string)null);
+                    b.ToTable("CarDescriptions");
                 });
 
             modelBuilder.Entity("BookCar.Domain.Entities.CarFeature", b =>
@@ -248,7 +248,7 @@ namespace BookCar.Persistence.Migrations
 
                     b.HasIndex("FeatureId");
 
-                    b.ToTable("CarFeatures", (string)null);
+                    b.ToTable("CarFeatures");
                 });
 
             modelBuilder.Entity("BookCar.Domain.Entities.CarPricing", b =>
@@ -274,7 +274,7 @@ namespace BookCar.Persistence.Migrations
 
                     b.HasIndex("PricingId");
 
-                    b.ToTable("CarPricings", (string)null);
+                    b.ToTable("CarPricings");
                 });
 
             modelBuilder.Entity("BookCar.Domain.Entities.Category", b =>
@@ -291,7 +291,7 @@ namespace BookCar.Persistence.Migrations
 
                     b.HasKey("CategoryId");
 
-                    b.ToTable("Categories", (string)null);
+                    b.ToTable("Categories");
                 });
 
             modelBuilder.Entity("BookCar.Domain.Entities.Contact", b =>
@@ -323,7 +323,7 @@ namespace BookCar.Persistence.Migrations
 
                     b.HasKey("ContactId");
 
-                    b.ToTable("Contacts", (string)null);
+                    b.ToTable("Contacts");
                 });
 
             modelBuilder.Entity("BookCar.Domain.Entities.Feature", b =>
@@ -340,7 +340,7 @@ namespace BookCar.Persistence.Migrations
 
                     b.HasKey("FeatureId");
 
-                    b.ToTable("Features", (string)null);
+                    b.ToTable("Features");
                 });
 
             modelBuilder.Entity("BookCar.Domain.Entities.FooterAddress", b =>
@@ -369,7 +369,7 @@ namespace BookCar.Persistence.Migrations
 
                     b.HasKey("FooterAddressId");
 
-                    b.ToTable("FooterAddresses", (string)null);
+                    b.ToTable("FooterAddresses");
                 });
 
             modelBuilder.Entity("BookCar.Domain.Entities.Location", b =>
@@ -386,7 +386,7 @@ namespace BookCar.Persistence.Migrations
 
                     b.HasKey("LocationId");
 
-                    b.ToTable("Locations", (string)null);
+                    b.ToTable("Locations");
                 });
 
             modelBuilder.Entity("BookCar.Domain.Entities.Pricing", b =>
@@ -403,7 +403,7 @@ namespace BookCar.Persistence.Migrations
 
                     b.HasKey("PricingId");
 
-                    b.ToTable("pricings", (string)null);
+                    b.ToTable("pricings");
                 });
 
             modelBuilder.Entity("BookCar.Domain.Entities.Service", b =>
@@ -428,7 +428,7 @@ namespace BookCar.Persistence.Migrations
 
                     b.HasKey("ServiceId");
 
-                    b.ToTable("Services", (string)null);
+                    b.ToTable("Services");
                 });
 
             modelBuilder.Entity("BookCar.Domain.Entities.SocialMedia", b =>
@@ -453,7 +453,29 @@ namespace BookCar.Persistence.Migrations
 
                     b.HasKey("SocialMediaId");
 
-                    b.ToTable("SocialMedias", (string)null);
+                    b.ToTable("SocialMedias");
+                });
+
+            modelBuilder.Entity("BookCar.Domain.Entities.TagCloud", b =>
+                {
+                    b.Property<int>("TagCloudId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TagCloudId"));
+
+                    b.Property<int>("BlogId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("TagCloudId");
+
+                    b.HasIndex("BlogId");
+
+                    b.ToTable("TagClouds");
                 });
 
             modelBuilder.Entity("BookCar.Domain.Entities.Testimonial", b =>
@@ -482,7 +504,7 @@ namespace BookCar.Persistence.Migrations
 
                     b.HasKey("TestimonialId");
 
-                    b.ToTable("Testimonials", (string)null);
+                    b.ToTable("Testimonials");
                 });
 
             modelBuilder.Entity("BookCar.Domain.Entities.Blog", b =>
@@ -564,9 +586,25 @@ namespace BookCar.Persistence.Migrations
                     b.Navigation("Pricing");
                 });
 
+            modelBuilder.Entity("BookCar.Domain.Entities.TagCloud", b =>
+                {
+                    b.HasOne("BookCar.Domain.Entities.Blog", "Blog")
+                        .WithMany("TagClouds")
+                        .HasForeignKey("BlogId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Blog");
+                });
+
             modelBuilder.Entity("BookCar.Domain.Entities.Author", b =>
                 {
                     b.Navigation("Blogs");
+                });
+
+            modelBuilder.Entity("BookCar.Domain.Entities.Blog", b =>
+                {
+                    b.Navigation("TagClouds");
                 });
 
             modelBuilder.Entity("BookCar.Domain.Entities.Brand", b =>

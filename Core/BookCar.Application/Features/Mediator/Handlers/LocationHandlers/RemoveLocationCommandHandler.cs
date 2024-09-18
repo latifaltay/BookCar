@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace BookCar.Application.Features.Mediator.Handlers.LocationHandlers
 {
-    public class RemoveAuthorCommandHandler(IRepository<Location> _repository) : IRequestHandler<RemoveLocationCommand>
+    public class RemoveLocationCommandHandler(IRepository<Location> _repository) : IRequestHandler<RemoveLocationCommand>
     {
         public async Task Handle(RemoveLocationCommand request, CancellationToken cancellationToken)
         {
