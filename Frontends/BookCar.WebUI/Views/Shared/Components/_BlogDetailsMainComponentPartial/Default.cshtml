@@ -1,12 +1,14 @@
-﻿<div class="col-md-8 ftco-animate">
-    <h2 class="mb-3">Merhaba fact a reader be distracted</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, eius mollitia suscipit, quisquam doloremque distinctio perferendis et doloribus unde architecto optio laboriosam porro adipisci sapiente officiis nemo accusamus ad praesentium? Esse minima nisi et. Dolore perferendis, enim praesentium omnis, iste doloremque quia officia optio deserunt molestiae voluptates soluta architecto tempora.</p>
+﻿@model GetBlogById
+
+<div class="col-md-8 ftco-animate">
+    <h2 class="mb-3">@Model.Title</h2>
+    <p>@Model.BlogDescription</p>
    
     @* bloğun kendi spesifik etiket bulutlarını gösteren partial *@
-    @await Component.InvokeAsync("_BlogDetailCloudTagByBlogComponentPartial")
+    @await Component.InvokeAsync("_BlogDetailCloudTagByBlogComponentPartial", new { id = ViewBag.blogId })
 
     @* bloğun yazarına ait bilgilerin getirildiği partial *@
-    @await Component.InvokeAsync("_BlogDetailsAuthorAboutComponentPartial")
+    @await Component.InvokeAsync("_BlogDetailsAuthorAboutComponentPartial", new { id = ViewBag.blogId })
 
 
     <div class="pt-5 mt-5">
@@ -20,3 +22,5 @@
 
     </div>
 </div>
+
+

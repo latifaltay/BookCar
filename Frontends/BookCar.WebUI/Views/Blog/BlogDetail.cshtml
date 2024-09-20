@@ -9,7 +9,7 @@
         <div class="row">
 
             @* bloğun detaylarının geldiği component partial *@
-            @await Component.InvokeAsync("_BlogDetailsMainComponentPartial")
+            @await Component.InvokeAsync("_BlogDetailsMainComponentPartial", new { id = ViewBag.blogId })
 
             <div class="col-md-4 sidebar ftco-animate">
 
@@ -23,8 +23,8 @@
                 @await Component.InvokeAsync("_BlogDetailsRecentBlogsComponentPartial")
 
                 @* blog detayı sayfasında gösterilecek olan Tag Cloudu yani seo için kullanılacak olan etiket bulutunun blog detayı sayfasında gösterildiği component partial *@
-                @await Component.InvokeAsync("_BlogDetailsTagCloudComponentPartial")
-
+@*                 @await Component.InvokeAsync("_BlogDetailsTagCloudComponentPartial", new { id = ViewBag.blogId }))
+ *@
                 @* blog detayı sayfasında sağ tarafta bulunan paragraf yazısının dinamik olarak getirildiği component partial*@
                 @await Component.InvokeAsync("_BlogDetailsParagraphComponentPartial")
                         

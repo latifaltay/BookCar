@@ -12,6 +12,13 @@ namespace BookCar.Persistence.Repositories.BlogRepositories
 {
     public class BlogRepository(BookCarContext _context) : IBlogRepository
     {
+        public List<Blog> GetBlogByAuthorId(int id)
+        {
+            var value = _context.Blogs.Include(x => x.Author).Where(x => x.BlogId == id);
+            var sql = value.ToQueryString();
+            return value.ToList();
+        }
+
         public List<Blog> GetBlogsWithAuthors()
         {
             var values = _context.Blogs.Include(x => x.Author).Include(x => x.Category).ToList();

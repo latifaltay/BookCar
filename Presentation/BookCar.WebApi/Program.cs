@@ -8,12 +8,14 @@ using BookCar.Application.Interfaces;
 using BookCar.Application.Interfaces.BlogInterfaces;
 using BookCar.Application.Interfaces.CarInterfaces;
 using BookCar.Application.Interfaces.CarPricingInterfaces;
+using BookCar.Application.Interfaces.TagCloudInterfaces;
 using BookCar.Application.Services;
 using BookCar.Persistence.Context;
 using BookCar.Persistence.Repositories;
 using BookCar.Persistence.Repositories.BlogRepositories;
 using BookCar.Persistence.Repositories.CarPricingRepositories;
 using BookCar.Persistence.Repositories.CarRepositories;
+using BookCar.Persistence.Repositories.TagCloudRepositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,6 +25,7 @@ builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 builder.Services.AddScoped(typeof(ICarRepository), typeof(CarRepository));
 builder.Services.AddScoped(typeof(ICarPricingRepository), typeof(CarPricingRepository));
 builder.Services.AddScoped(typeof(IBlogRepository), typeof(BlogRepository));
+builder.Services.AddScoped(typeof(ITagCloudRepository), typeof(TagCloudRepository));
 
 builder.Services.AddScoped<GetAboutQueryHandler>();
 builder.Services.AddScoped<GetAboutByIdQueryHandler>();

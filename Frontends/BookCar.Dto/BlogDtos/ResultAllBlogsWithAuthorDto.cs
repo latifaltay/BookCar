@@ -18,6 +18,8 @@ namespace BookCar.Dto.BlogDtos
         public DateTime CreatedDate { get; set; }
         public int CategoryId { get; set; }
         public string BlogDescription { get; set; }
+        public string AuthorDescription { get; set; }
+        public string AuthorImaageUrl { get; set; }
 
     }
 }

@@ -24,6 +24,7 @@ namespace BookCar.Application.Features.Mediator.Handlers.BlogHandlers
                 CoverImageUrl = value.CoverImageUrl,
                 CreatedDate = value.CreatedDate,
                 Title = value.Title,
+                BlogDescription = value.BlogDescription,
             };
         }
     }
