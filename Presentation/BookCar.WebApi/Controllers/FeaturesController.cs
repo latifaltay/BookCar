@@ -12,15 +12,15 @@ namespace BookCar.WebApi.Controllers
     public class FeaturesController(IMediator _mediator) : ControllerBase
     {
         [HttpGet]
-        public async Task<IActionResult> FeatureList() 
+        public async Task<IActionResult> FeatureList()
         {
             var values = await _mediator.Send(new GetFeatureQuery());
             return Ok(values);
         }
 
 
-        [HttpPost("{id}")]
-        public async Task<IActionResult> GetFeature(int id) 
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetFeature(int id)
         {
             var value = await _mediator.Send(new GetFeatureByIdQuery(id));
             return Ok(value);
@@ -28,16 +28,16 @@ namespace BookCar.WebApi.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> CreateFeature(CreateFeatureCommand command) 
+        public async Task<IActionResult> CreateFeature(CreateFeatureCommand command)
         {
             await _mediator.Send(command);
             return Ok("Özellik Başarıyla Eklendi!");
         }
 
-        [HttpDelete]
-        public async Task<IActionResult> DeleteFeature(RemoveFeatureCommand command) 
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> RemoveFeature(int id)
         {
-            await _mediator.Send(command);
+            await _mediator.Send(new RemoveFeatureCommand(id));
             return Ok("Özellik Başarıyla Silindi!");
         }
 

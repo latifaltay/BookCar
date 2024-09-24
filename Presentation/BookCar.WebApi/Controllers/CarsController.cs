@@ -65,7 +65,7 @@ namespace BookCar.WebApi.Controllers
             return Ok("Brand Bilgisi Eklendi!");
         }
         
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCar(int id) 
         {
             await _removeCarCommandHandler.Handle(new RemoveCarCommand(id));

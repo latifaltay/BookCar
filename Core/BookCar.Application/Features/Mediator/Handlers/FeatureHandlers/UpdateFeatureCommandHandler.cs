@@ -14,9 +14,9 @@ namespace BookCar.Application.Features.Mediator.Handlers.FeatureHandlers
     {
         public async Task Handle(UpdateFeatureCommand request, CancellationToken cancellationToken)
         {
-            var value = await _repository.GetByIdAsync(request.FeatureId);
-            value.Name = request.Name;
-            await _repository.UpdateAsync(value);
+            var values = await _repository.GetByIdAsync(request.FeatureId);
+            values.Name = request.Name;
+            await _repository.UpdateAsync(values);
         }
     }
 }
