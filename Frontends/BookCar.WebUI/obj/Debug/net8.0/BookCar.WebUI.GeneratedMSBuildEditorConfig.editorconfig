@@ -26,6 +26,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\ELEYDEV\Desktop\BookCar\Frontends\BookCar.WebUI
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/ELEYDEV/Desktop/BookCar/Frontends/BookCar.WebUI/Areas/Admin/Views/AdminAbout/CreateAbout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5BYm91dFxDcmVhdGVBYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ELEYDEV/Desktop/BookCar/Frontends/BookCar.WebUI/Areas/Admin/Views/AdminAbout/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5BYm91dFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ELEYDEV/Desktop/BookCar/Frontends/BookCar.WebUI/Areas/Admin/Views/AdminAbout/UpdateAbout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5BYm91dFxVcGRhdGVBYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ELEYDEV/Desktop/BookCar/Frontends/BookCar.WebUI/Areas/Admin/Views/AdminBanner/CreateBanner.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5CYW5uZXJcQ3JlYXRlQmFubmVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

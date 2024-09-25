@@ -61,7 +61,6 @@ namespace BookCar.WebUI.Areas.Admin.Controllers
         }
 
 
-        // Banner update edilemiyor sorulacak hata var
         [HttpGet]
         [Route("UpdateBanner/{id}")]
         public async Task<IActionResult> UpdateBanner(int id)
