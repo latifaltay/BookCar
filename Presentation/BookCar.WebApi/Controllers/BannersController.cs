@@ -1,6 +1,7 @@
 ﻿using BookCar.Application.Features.CQRS.Commands.BannerCommands;
 using BookCar.Application.Features.CQRS.Handlers.BannerHandlers;
 using BookCar.Application.Features.CQRS.Queries.BannerQueries;
+using BookCar.Application.Features.Mediator.Commands.FeatureCommands;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Query.Internal;
@@ -39,12 +40,14 @@ namespace BookCar.WebApi.Controllers
             return Ok(values);
         }
 
-        [HttpPost("{id}")]
+
+        [HttpGet("{id}")]
         public async Task<IActionResult> GetBanner(int id) 
         {
             var value = await _getBannerByIdQueryHandler.Handle(new GetBannerByIdQuery(id));
             return Ok(value);
         }
+
 
         [HttpPost]
         public async Task<IActionResult> CreateBanner(CreateBannerCommand command) 
@@ -68,6 +71,5 @@ namespace BookCar.WebApi.Controllers
             await _updateBannerCommandHandler.Handle(command);
             return Ok("Banner Bilgisi Güncellendi!");
         }
-
     }
 }

@@ -209,7 +209,7 @@
     "ContainingType": "BookCar.WebApi.Controllers.BannersController",
     "Method": "GetBanner",
     "RelativePath": "api/Banners/{id}",
-    "HttpMethod": "POST",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
