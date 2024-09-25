@@ -1,4 +1,5 @@
 ﻿using BookCar.Application.Features.Mediator.Commands.AuthorCommands;
+using BookCar.Application.Features.Mediator.Commands.FeatureCommands;
 using BookCar.Application.Features.Mediator.Commands.TestimonialCommands;
 using BookCar.Application.Features.Mediator.Queries.AuthorQueries;
 using BookCar.Application.Features.Mediator.Queries.TestimonialQueries;
@@ -20,7 +21,7 @@ namespace BookCar.WebApi.Controllers
         }
 
 
-        [HttpPost("{id}")]
+        [HttpGet("{id}")]
         public async Task<IActionResult> GetAuthor(int id)
         {
             var value = await _mediator.Send(new GetAuthorByIdQuery(id));
@@ -37,11 +38,12 @@ namespace BookCar.WebApi.Controllers
 
 
         [HttpDelete]
-        public async Task<IActionResult> DeleteAuthor(RemoveAuthorCommand command)
+        public async Task<IActionResult> RemoveAuthor(int id)
         {
-            await _mediator.Send(command);
-            return Ok("Yazar Başarıyla Silindi!");
+            await _mediator.Send(new RemoveAuthorCommand(id));
+            return Ok("Yazar başarıyla silindi");
         }
+
 
 
         [HttpPut]

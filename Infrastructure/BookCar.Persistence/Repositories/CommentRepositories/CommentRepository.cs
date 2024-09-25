@@ -1,6 +1,7 @@
 ﻿using BookCar.Application.Features.RepositoryPattern;
 using BookCar.Domain.Entities;
 using BookCar.Persistence.Context;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,6 +33,11 @@ namespace BookCar.Persistence.Repositories.CommentRepositories
         public Comment GetById(int id)
         {
             return _context.Comments.Find(id);
+        }
+
+        public List<Comment> GetCommetByBlogId(int id)
+        {
+            return _context.Set<Comment>().Where(x => x.BlogId == id).ToList();   
         }
 
         public void Remove(Comment entity)

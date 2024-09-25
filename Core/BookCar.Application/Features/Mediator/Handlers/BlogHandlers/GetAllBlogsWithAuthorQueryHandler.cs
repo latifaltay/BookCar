@@ -14,7 +14,7 @@ namespace BookCar.Application.Features.Mediator.Handlers.BlogHandlers
     {
         public async Task<List<GetAllBlogsWithAuthorQueryResult>> Handle(GetAllBlogsWithAuthorQuery request, CancellationToken cancellationToken)
         {
-            var values = _repository.GetBlogsWithAuthors();
+            var values = _repository.GetAllBlogsWithAuthors();
             return values.Select(x => new GetAllBlogsWithAuthorQueryResult 
             {
                 AuthorId = x.AuthorId,

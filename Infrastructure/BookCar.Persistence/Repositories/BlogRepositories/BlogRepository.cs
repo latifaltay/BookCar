@@ -19,7 +19,7 @@ namespace BookCar.Persistence.Repositories.BlogRepositories
             return value.ToList();
         }
 
-        public List<Blog> GetBlogsWithAuthors()
+        public List<Blog> GetAllBlogsWithAuthors()
         {
             var values = _context.Blogs.Include(x => x.Author).Include(x => x.Category).ToList();
             return values;

@@ -20,7 +20,7 @@ namespace BookCar.WebApi.Controllers
         }
 
 
-        [HttpPost("{id}")]
+        [HttpGet("{id}")]
         public async Task<IActionResult> GetPricing(int id)
         {
             var value = await _mediator.Send(new GetPricingByIdQuery(id));
@@ -37,9 +37,9 @@ namespace BookCar.WebApi.Controllers
 
 
         [HttpDelete]
-        public async Task<IActionResult> DeletePricing(RemovePricingCommand command)
+        public async Task<IActionResult> DeletePricing(int id)
         {
-            await _mediator.Send(command);
+            await _mediator.Send(new RemovePricingCommand(id));
             return Ok("Fiyat Başarıyla Silindi!");
         }
 
