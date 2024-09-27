@@ -20,7 +20,7 @@ namespace BookCar.WebApi.Controllers
         }
 
 
-        [HttpPost("{id}")]
+        [HttpGet("{id}")]
         public async Task<IActionResult> GetFeature(int id)
         {
             var value = await _mediator.Send(new GetFooterAddressByIdQuery(id));
@@ -37,9 +37,9 @@ namespace BookCar.WebApi.Controllers
 
 
         [HttpDelete]
-        public async Task<IActionResult> DeleteFeature(RemoveFooterAddressCommand command)
+        public async Task<IActionResult> DeleteFeature(int id)
         {
-            await _mediator.Send(command);
+            await _mediator.Send(new RemoveFooterAddressCommand(id));
             return Ok("Altbilgi Başarıyla Silindi!");
         }
 

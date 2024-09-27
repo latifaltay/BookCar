@@ -20,7 +20,7 @@ namespace BookCar.WebApi.Controllers
         }
 
 
-        [HttpPost("{id}")]
+        [HttpGet("{id}")]
         public async Task<IActionResult> GetFeature(int id)
         {
             var value = await _mediator.Send(new GetServiceByIdQuery(id));
@@ -36,9 +36,9 @@ namespace BookCar.WebApi.Controllers
         }
 
         [HttpDelete]
-        public async Task<IActionResult> DeleteFeature(RemoveServiceCommand command)
+        public async Task<IActionResult> DeleteFeature(int id)
         {
-            await _mediator.Send(command);
+            await _mediator.Send(new RemoveServiceCommand(id));
             return Ok("Servis Başarıyla Silindi!");
         }
 

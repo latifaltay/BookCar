@@ -856,9 +856,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "command",
-        "Type": "BookCar.Application.Features.Mediator.Commands.FooterAddressCommands.RemoveFooterAddressCommand",
-        "IsRequired": true
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -883,7 +883,7 @@
     "ContainingType": "BookCar.WebApi.Controllers.FooterAddressesController",
     "Method": "GetFeature",
     "RelativePath": "api/FooterAddresses/{id}",
-    "HttpMethod": "POST",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -930,9 +930,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "command",
-        "Type": "BookCar.Application.Features.Mediator.Commands.LocationCommands.RemoveLocationCommand",
-        "IsRequired": true
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -957,7 +957,7 @@
     "ContainingType": "BookCar.WebApi.Controllers.LocationsController",
     "Method": "GetLocation",
     "RelativePath": "api/Locations/{id}",
-    "HttpMethod": "POST",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -1078,9 +1078,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "command",
-        "Type": "BookCar.Application.Features.Mediator.Commands.ServiceCommands.RemoveServiceCommand",
-        "IsRequired": true
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -1105,7 +1105,7 @@
     "ContainingType": "BookCar.WebApi.Controllers.ServicesController",
     "Method": "GetFeature",
     "RelativePath": "api/Services/{id}",
-    "HttpMethod": "POST",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -1152,9 +1152,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "command",
-        "Type": "BookCar.Application.Features.Mediator.Commands.SocialMediaCommands.RemoveSocialMediaCommand",
-        "IsRequired": true
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -1179,7 +1179,7 @@
     "ContainingType": "BookCar.WebApi.Controllers.SocialMediasController",
     "Method": "GetSocialMedia",
     "RelativePath": "api/SocialMedias/{id}",
-    "HttpMethod": "POST",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -1316,9 +1316,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "command",
-        "Type": "BookCar.Application.Features.Mediator.Commands.TestimonialCommands.RemoveTestimonialCommand",
-        "IsRequired": true
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -1343,7 +1343,7 @@
     "ContainingType": "BookCar.WebApi.Controllers.TestimonialsController",
     "Method": "GetTestimonial",
     "RelativePath": "api/Testimonials/{id}",
-    "HttpMethod": "POST",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [

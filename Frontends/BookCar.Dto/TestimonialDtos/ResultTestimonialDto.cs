@@ -8,10 +8,10 @@ namespace BookCar.Dto.TestimonialDtos
 {
     public class ResultTestimonialDto
     {
-        public int testimonialId { get; set; }
-        public string name { get; set; }
-        public string title { get; set; }
-        public string comment { get; set; }
-        public string imageUrl { get; set; }
+        public int TestimonialId { get; set; }
+        public string Name { get; set; }
+        public string Title { get; set; }
+        public string Comment { get; set; }
+        public string ImageUrl { get; set; }
     }
 }

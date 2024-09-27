@@ -22,7 +22,7 @@ namespace BookCar.WebApi.Controllers
         }
 
 
-        [HttpPost("{id}")]
+        [HttpGet("{id}")]
         public async Task<IActionResult> GetTestimonial(int id)
         {
             var value = await _mediator.Send(new GetTestimonialByIdQuery(id));
@@ -39,9 +39,9 @@ namespace BookCar.WebApi.Controllers
 
 
         [HttpDelete]
-        public async Task<IActionResult> DeleteTestimonial(RemoveTestimonialCommand command)
+        public async Task<IActionResult> DeleteTestimonial(int id)
         {
-            await _mediator.Send(command);
+            await _mediator.Send(new RemoveTestimonialCommand(id));
             return Ok("Referans Başarıyla Silindi!");
         }
 

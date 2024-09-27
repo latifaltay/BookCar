@@ -15,11 +15,12 @@ namespace BookCar.Application.Features.Mediator.Handlers.SocialMediaHandlers
     {
         public async Task Handle(UpdateSocialMediaCommand request, CancellationToken cancellationToken)
         {
-            var value = await _repository.GetByIdAsync(request.SocialMediaId);
-            value.Name = request.Name;
-            value.Url = request.Url;
-            value.Icon = request.Icon;
-            await _repository.UpdateAsync(value);
+            var values = await _repository.GetByIdAsync(request.SocialMediaId);
+            values.SocialMediaId = request.SocialMediaId;
+            values.Name = request.Name;
+            values.Url = request.Url;
+            values.Icon = request.Icon;
+            await _repository.UpdateAsync(values);
         }
     }
 }

@@ -17,7 +17,7 @@ namespace BookCar.WebApi.Controllers
         }
         
 
-        [HttpPost("{id}")]
+        [HttpGet("{id}")]
         public async Task<IActionResult> GetLocation(int id)
         {
             var value = await _mediator.Send(new GetLocationByIdQuery(id));
@@ -34,9 +34,9 @@ namespace BookCar.WebApi.Controllers
 
 
         [HttpDelete]
-        public async Task<IActionResult> DeleteLocation(RemoveLocationCommand command)
+        public async Task<IActionResult> DeleteLocation(int id)
         {
-            await _mediator.Send(command);
+            await _mediator.Send(new RemoveLocationCommand(id));
             return Ok("Lokasyon Başarıyla Silindi!");
         }
 

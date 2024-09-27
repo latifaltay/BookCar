@@ -20,7 +20,7 @@ namespace BookCar.WebApi.Controllers
         }
 
 
-        [HttpPost("{id}")]
+        [HttpGet("{id}")]
         public async Task<IActionResult> GetSocialMedia(int id)
         {
             var value = await _mediator.Send(new GetSocialMediaByIdQuery(id));
@@ -37,9 +37,9 @@ namespace BookCar.WebApi.Controllers
 
 
         [HttpDelete]
-        public async Task<IActionResult> DeleteSocialMedia(RemoveSocialMediaCommand command)
+        public async Task<IActionResult> DeleteSocialMedia(int id)
         {
-            await _mediator.Send(command);
+            await _mediator.Send(new RemoveSocialMediaCommand(id));
             return Ok("Sosyal Medya Başarıyla Silindi!");
         }
 
@@ -48,7 +48,7 @@ namespace BookCar.WebApi.Controllers
         public async Task<IActionResult> UpdateSocialMedia(UpdateSocialMediaCommand command)
         {
             await _mediator.Send(command);
-            return Ok("Sosyal Medya Başarıyla Güncellendi!");
+            return Ok("Sosyal Medya başarıyla güncellendi");
         }
     }
 }
