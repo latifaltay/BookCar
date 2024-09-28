@@ -12,6 +12,12 @@ namespace BookCar.Persistence.Repositories.CarRepositories
 {
     public class CarRepository(BookCarContext _context) : ICarRepository
     {
+        public int GetCarCount()
+        {
+            var value = _context.Cars.Count();
+            return value;
+        }
+
         //private readonly BookCarContext _context;
         public List<Car> GetCarsListWithBrands()
         {

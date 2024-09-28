@@ -4,6 +4,9 @@ using BookCar.Application.Features.CQRS.Handlers.BrandHandlers;
 using BookCar.Application.Features.CQRS.Handlers.CarHandlers;
 using BookCar.Application.Features.CQRS.Queries.BrandQueries;
 using BookCar.Application.Features.CQRS.Queries.CarQueries;
+using BookCar.Application.Features.Mediator.Handlers.StatisticsHandlers;
+using BookCar.Application.Features.Mediator.Queries.StatisticsQueries;
+using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -20,6 +23,7 @@ namespace BookCar.WebApi.Controllers
         private readonly RemoveCarCommandHandler _removeCarCommandHandler;
         private readonly GetCarWithBrandQueryHandler _getCarWithBrandQueryHandler;
         private readonly GetLast5CarsWithBrandQueryHandler _getLast5CarsWithBrandQueryHandler;
+        private readonly IMediator _mediator;
 
 
         public CarsController(
@@ -29,7 +33,8 @@ namespace BookCar.WebApi.Controllers
             UpdateCarCommandHandler updateCarCommandHandler, 
             RemoveCarCommandHandler removeCarCommandHandler,
             GetCarWithBrandQueryHandler getCarWithBrandQueryHandler,
-            GetLast5CarsWithBrandQueryHandler getLast5CarsWithBrandQueryHandler)
+            GetLast5CarsWithBrandQueryHandler getLast5CarsWithBrandQueryHandler,
+            IMediator mediator)
         {
             _getCarQueryHandler = getCarQueryHandler;
             _getCarByIdQueryHandler = getCarByIdQueryHandler;
@@ -38,6 +43,7 @@ namespace BookCar.WebApi.Controllers
             _removeCarCommandHandler = removeCarCommandHandler;
             _getCarWithBrandQueryHandler = getCarWithBrandQueryHandler;
             _getLast5CarsWithBrandQueryHandler = getLast5CarsWithBrandQueryHandler;
+            _mediator = mediator;
         }
 
 
