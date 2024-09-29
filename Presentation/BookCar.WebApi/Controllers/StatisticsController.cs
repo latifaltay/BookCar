@@ -36,7 +36,7 @@ namespace BookCar.WebApi.Controllers
         [HttpGet("GetAvgRentPriceForMonthly")]
         public async Task<IActionResult> GetAvgRentPriceForMonthly()
         {
-            var value = _mediator.Send(new GetAvgRentPriceForMonthlyQuery());
+            var value = await _mediator.Send(new GetAvgRentPriceForMonthlyQuery());
             return Ok(value);
         }
 
@@ -44,7 +44,7 @@ namespace BookCar.WebApi.Controllers
         [HttpGet("GetAvgRentPriceForWeekly")]
         public async Task<IActionResult> GetAvgRentPriceForWeekly()
         {
-            var value = _mediator.Send(new GetAvgRentPriceForWeeklyQuery());
+            var value = await _mediator.Send(new GetAvgRentPriceForWeeklyQuery());
             return Ok(value);
         }
 
