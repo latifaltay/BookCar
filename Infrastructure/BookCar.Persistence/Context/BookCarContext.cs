@@ -30,7 +30,7 @@ namespace BookCar.Persistence.Context
         public DbSet<Feature> Features { get; set; }
         public DbSet<FooterAddress> FooterAddresses { get; set; }
         public DbSet<Location> Locations { get; set; }
-        public DbSet<Pricing> pricings { get; set; }
+        public DbSet<Pricing> Pricings { get; set; }
         public DbSet<Service> Services { get; set; }
         public DbSet<SocialMedia> SocialMedias { get; set; }
         public DbSet<Testimonial> Testimonials { get; set; }
@@ -38,6 +38,7 @@ namespace BookCar.Persistence.Context
         public DbSet<Blog> Blogs { get; set; }
         public DbSet<TagCloud> TagClouds { get; set; }
         public DbSet<Comment> Comments { get; set; }
+        public DbSet<RentACar> RentACars { get; set; }
 
     }
 }

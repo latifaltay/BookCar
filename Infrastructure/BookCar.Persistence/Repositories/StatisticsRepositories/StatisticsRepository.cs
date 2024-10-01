@@ -26,7 +26,7 @@ namespace BookCar.Persistence.Repositories.StatisticsRepositories
             //return carPriceSum / carCount;
 
 
-            var id = _context.pricings.Where(x => x.Name == "Günlük").Select(x => x.PricingId).FirstOrDefault();
+            var id = _context.Pricings.Where(x => x.Name == "Günlük").Select(x => x.PricingId).FirstOrDefault();
             var value = _context.CarPricings.Where(x => x.PricingId == id).Average(x => x.Amount);
             return value;
 
@@ -38,7 +38,7 @@ namespace BookCar.Persistence.Repositories.StatisticsRepositories
             //var carCount = _context.Cars.Count();
             //return carPriceSum / carCount;
 
-            var id = _context.pricings.Where(x => x.Name == "Aylık").Select(x => x.PricingId).FirstOrDefault();
+            var id = _context.Pricings.Where(x => x.Name == "Aylık").Select(x => x.PricingId).FirstOrDefault();
             var result = _context.CarPricings.Where(x => x.PricingId == id).Average(x => x.Amount);
             return result;
 
@@ -50,7 +50,7 @@ namespace BookCar.Persistence.Repositories.StatisticsRepositories
             //var carCount = _context.Cars.Count();
             //return carPriceSum / carCount;
 
-            var id = _context.pricings.Where(x => x.Name == "Haftalık").Select(x => x.PricingId).FirstOrDefault();
+            var id = _context.Pricings.Where(x => x.Name == "Haftalık").Select(x => x.PricingId).FirstOrDefault();
             var value = _context.CarPricings.Where(x => x.CarPricingId == id).Average(x => x.Amount);
             return value;
         }
@@ -123,7 +123,7 @@ namespace BookCar.Persistence.Repositories.StatisticsRepositories
         {
             // select * from CarPricings where Amount = (Select Max(Amount) from CarPricings where PricingId =1)
 
-            var pricingId = _context.pricings.Where(x => x.Name == "Günlük").Select(x => x.PricingId).FirstOrDefault();
+            var pricingId = _context.Pricings.Where(x => x.Name == "Günlük").Select(x => x.PricingId).FirstOrDefault();
             var amount = _context.CarPricings.Where(x => x.PricingId == pricingId).Max(x => x.Amount);
             var carId = _context.CarPricings.Where(x => x.Amount == amount).Select(x => x.CarId).FirstOrDefault();
             var brandModel = _context.Cars.Where(x => x.CarId == carId).Include(x => x.Brand).Select(x => x.Brand.Name + " " + x.Model).FirstOrDefault();
@@ -146,7 +146,7 @@ namespace BookCar.Persistence.Repositories.StatisticsRepositories
         {
             //select* from CarPricings where Amount = (select MIN(Amount) from CarPricings where PricingId = 1)
 
-            var pricingId = _context.pricings.Where(x => x.Name == "Günlük").Select(y => y.PricingId).FirstOrDefault();
+            var pricingId = _context.Pricings.Where(x => x.Name == "Günlük").Select(y => y.PricingId).FirstOrDefault();
             var amount = _context.CarPricings.Where(x => x.PricingId == pricingId).Min(x => x.Amount);
             var carId = _context.CarPricings.Where(x => x.Amount == amount).Select(x => x.CarId).FirstOrDefault();
             var brandModel = _context.Cars.Where(x => x.CarId == carId).Include(x => x.Brand).Select(x => x.Brand.Name + " " + x.Model).FirstOrDefault();

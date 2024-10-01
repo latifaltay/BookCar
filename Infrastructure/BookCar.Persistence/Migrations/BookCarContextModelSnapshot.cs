@@ -432,7 +432,41 @@ namespace BookCar.Persistence.Migrations
 
                     b.HasKey("PricingId");
 
-                    b.ToTable("pricings");
+                    b.ToTable("Pricings");
+                });
+
+            modelBuilder.Entity("BookCar.Domain.Entities.RentACar", b =>
+                {
+                    b.Property<int>("RentACarId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RentACarId"));
+
+                    b.Property<bool>("Available")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("CarId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("LocationId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PickUpLocationId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("RentACarId1")
+                        .HasColumnType("int");
+
+                    b.HasKey("RentACarId");
+
+                    b.HasIndex("CarId");
+
+                    b.HasIndex("LocationId");
+
+                    b.HasIndex("RentACarId1");
+
+                    b.ToTable("RentACars");
                 });
 
             modelBuilder.Entity("BookCar.Domain.Entities.Service", b =>
@@ -599,7 +633,7 @@ namespace BookCar.Persistence.Migrations
             modelBuilder.Entity("BookCar.Domain.Entities.CarPricing", b =>
                 {
                     b.HasOne("BookCar.Domain.Entities.Car", "Car")
-                        .WithMany("CarPricing")
+                        .WithMany("CarPricings")
                         .HasForeignKey("CarId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -624,6 +658,29 @@ namespace BookCar.Persistence.Migrations
                         .IsRequired();
 
                     b.Navigation("Blog");
+                });
+
+            modelBuilder.Entity("BookCar.Domain.Entities.RentACar", b =>
+                {
+                    b.HasOne("BookCar.Domain.Entities.Car", "Car")
+                        .WithMany("RentACars")
+                        .HasForeignKey("CarId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BookCar.Domain.Entities.Location", "Location")
+                        .WithMany()
+                        .HasForeignKey("LocationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BookCar.Domain.Entities.RentACar", null)
+                        .WithMany("RentACars")
+                        .HasForeignKey("RentACarId1");
+
+                    b.Navigation("Car");
+
+                    b.Navigation("Location");
                 });
 
             modelBuilder.Entity("BookCar.Domain.Entities.TagCloud", b =>
@@ -660,7 +717,9 @@ namespace BookCar.Persistence.Migrations
 
                     b.Navigation("CarFeatures");
 
-                    b.Navigation("CarPricing");
+                    b.Navigation("CarPricings");
+
+                    b.Navigation("RentACars");
                 });
 
             modelBuilder.Entity("BookCar.Domain.Entities.Category", b =>
@@ -676,6 +735,11 @@ namespace BookCar.Persistence.Migrations
             modelBuilder.Entity("BookCar.Domain.Entities.Pricing", b =>
                 {
                     b.Navigation("CarPricing");
+                });
+
+            modelBuilder.Entity("BookCar.Domain.Entities.RentACar", b =>
+                {
+                    b.Navigation("RentACars");
                 });
 #pragma warning restore 612, 618
         }
