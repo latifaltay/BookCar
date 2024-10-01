@@ -32,7 +32,7 @@ namespace BookCar.Domain.Entities
         [DataType(DataType.Time)]
         public TimeSpan DropOffTime { get; set; }
 
-        public int CustomerID { get; set; }
+        public int CustomerId { get; set; }
         public Customer Customer { get; set; }
         public string PickUpDescription { get; set; }
         public string DropOffDescription { get; set; }

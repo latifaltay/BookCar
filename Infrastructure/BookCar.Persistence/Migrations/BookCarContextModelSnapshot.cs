@@ -497,7 +497,7 @@ namespace BookCar.Persistence.Migrations
                     b.Property<int>("CarId")
                         .HasColumnType("int");
 
-                    b.Property<int>("CustomerID")
+                    b.Property<int>("CustomerId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("DropOffDate")
@@ -533,7 +533,7 @@ namespace BookCar.Persistence.Migrations
 
                     b.HasIndex("CarId");
 
-                    b.HasIndex("CustomerID");
+                    b.HasIndex("CustomerId");
 
                     b.ToTable("RentACarProcess");
                 });
@@ -758,7 +758,7 @@ namespace BookCar.Persistence.Migrations
 
                     b.HasOne("BookCar.Domain.Entities.Customer", "Customer")
                         .WithMany("RentACarProcesses")
-                        .HasForeignKey("CustomerID")
+                        .HasForeignKey("CustomerId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
