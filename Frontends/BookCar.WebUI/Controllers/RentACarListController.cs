@@ -6,6 +6,8 @@ namespace BookCar.WebUI.Controllers
     {
         public IActionResult Index()
         {
+            var data = TempData["value"];
+            ViewBag.v = data;   
             return View();
         }
     }

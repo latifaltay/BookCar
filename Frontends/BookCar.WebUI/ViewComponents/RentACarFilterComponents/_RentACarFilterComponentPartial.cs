@@ -6,7 +6,7 @@ namespace BookCar.WebUI.ViewComponents.RentACarFilterComponents
     {
         public IViewComponentResult Invoke(string v)
         {
-            v = "aaaa";
+            v = "test";
             TempData["value"] = v;
             return View();
         }
