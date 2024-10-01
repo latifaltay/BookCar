@@ -4,6 +4,7 @@ using BookCar.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BookCar.Persistence.Migrations
 {
     [DbContext(typeof(BookCarContext))]
-    partial class BookCarContextModelSnapshot : ModelSnapshot
+    [Migration("20241001055144_mig_add_rentAcar_Table2")]
+    partial class mig_add_rentAcar_Table2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -355,31 +358,6 @@ namespace BookCar.Persistence.Migrations
                     b.ToTable("Contacts");
                 });
 
-            modelBuilder.Entity("BookCar.Domain.Entities.Customer", b =>
-                {
-                    b.Property<int>("CustomerId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CustomerId"));
-
-                    b.Property<string>("CustomerMail")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("CustomerName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("CustomerSurname")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("CustomerId");
-
-                    b.ToTable("Customer");
-                });
-
             modelBuilder.Entity("BookCar.Domain.Entities.Feature", b =>
                 {
                     b.Property<int>("FeatureId")
@@ -477,65 +455,21 @@ namespace BookCar.Persistence.Migrations
                     b.Property<int>("LocationId")
                         .HasColumnType("int");
 
+                    b.Property<int>("PickUpLocationId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("RentACarId1")
+                        .HasColumnType("int");
+
                     b.HasKey("RentACarId");
 
                     b.HasIndex("CarId");
 
                     b.HasIndex("LocationId");
 
+                    b.HasIndex("RentACarId1");
+
                     b.ToTable("RentACars");
-                });
-
-            modelBuilder.Entity("BookCar.Domain.Entities.RentACarProcess", b =>
-                {
-                    b.Property<int>("RentACarProcessId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RentACarProcessId"));
-
-                    b.Property<int>("CarId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("CustomerID")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("DropOffDate")
-                        .HasColumnType("Date");
-
-                    b.Property<string>("DropOffDescription")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("DropOffLocation")
-                        .HasColumnType("int");
-
-                    b.Property<TimeSpan>("DropOffTime")
-                        .HasColumnType("time");
-
-                    b.Property<DateTime>("PickUpDate")
-                        .HasColumnType("Date");
-
-                    b.Property<string>("PickUpDescription")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("PickUpLocation")
-                        .HasColumnType("int");
-
-                    b.Property<TimeSpan>("PickUpTime")
-                        .HasColumnType("time");
-
-                    b.Property<decimal>("TotalPrice")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.HasKey("RentACarProcessId");
-
-                    b.HasIndex("CarId");
-
-                    b.HasIndex("CustomerID");
-
-                    b.ToTable("RentACarProcess");
                 });
 
             modelBuilder.Entity("BookCar.Domain.Entities.Service", b =>
@@ -743,28 +677,13 @@ namespace BookCar.Persistence.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("BookCar.Domain.Entities.RentACar", null)
+                        .WithMany("RentACars")
+                        .HasForeignKey("RentACarId1");
+
                     b.Navigation("Car");
 
                     b.Navigation("Location");
-                });
-
-            modelBuilder.Entity("BookCar.Domain.Entities.RentACarProcess", b =>
-                {
-                    b.HasOne("BookCar.Domain.Entities.Car", "Car")
-                        .WithMany("RentACarProcesses")
-                        .HasForeignKey("CarId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("BookCar.Domain.Entities.Customer", "Customer")
-                        .WithMany("RentACarProcesses")
-                        .HasForeignKey("CustomerID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Car");
-
-                    b.Navigation("Customer");
                 });
 
             modelBuilder.Entity("BookCar.Domain.Entities.TagCloud", b =>
@@ -803,19 +722,12 @@ namespace BookCar.Persistence.Migrations
 
                     b.Navigation("CarPricings");
 
-                    b.Navigation("RentACarProcesses");
-
                     b.Navigation("RentACars");
                 });
 
             modelBuilder.Entity("BookCar.Domain.Entities.Category", b =>
                 {
                     b.Navigation("Blogs");
-                });
-
-            modelBuilder.Entity("BookCar.Domain.Entities.Customer", b =>
-                {
-                    b.Navigation("RentACarProcesses");
                 });
 
             modelBuilder.Entity("BookCar.Domain.Entities.Feature", b =>
@@ -831,6 +743,11 @@ namespace BookCar.Persistence.Migrations
             modelBuilder.Entity("BookCar.Domain.Entities.Pricing", b =>
                 {
                     b.Navigation("CarPricing");
+                });
+
+            modelBuilder.Entity("BookCar.Domain.Entities.RentACar", b =>
+                {
+                    b.Navigation("RentACars");
                 });
 #pragma warning restore 612, 618
         }
