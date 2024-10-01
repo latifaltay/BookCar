@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BookCar.Application.Features.Mediator.Results.RentACarResults
+namespace BookCar.Dto.RentACarDtos
 {
-    public class GetRentACarQueryResult
+    public class FilterRentACarDto
     {
         public int CarId { get; set; }
         public string Brand { get; set; }

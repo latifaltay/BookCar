@@ -15,7 +15,7 @@ namespace BookCar.Persistence.Repositories.RentACarRepositories
     {
         public async Task<List<RentACar>> GetByFilterAsync(Expression<Func<RentACar, bool>> filter)
         {
-            var values = await _context.RentACars.Where(filter).Include(x => x.Car).ThenInclude(y => y.Brand).ToListAsync();
+            var values = await _context.RentACars.Where(filter).Include(x => x.Car).ThenInclude(x => x.Brand).ToListAsync();
             return values;
         }
     }
