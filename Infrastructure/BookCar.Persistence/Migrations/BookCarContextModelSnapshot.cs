@@ -576,6 +576,10 @@ namespace BookCar.Persistence.Migrations
                     b.Property<int?>("PickUpLocationId")
                         .HasColumnType("int");
 
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Surname")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");

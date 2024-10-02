@@ -10,10 +10,10 @@ namespace BookCar.WebApi.Controllers
     public class ReservationController(IMediator _mediator) : ControllerBase
     {
         [HttpPost]
-        public async Task<IActionResult> CreateReservation(CreateReservationCommand createReservationCommand) 
+        public async Task<IActionResult> CreateReservation(CreateReservationCommand command)
         {
-            await _mediator.Send(createReservationCommand);
-            return Ok("Rezervasyon başarıyla eklendi.");
+            await _mediator.Send(command);
+            return Ok("Rezervasyon başarıyla eklendi");
         }
     }
 }

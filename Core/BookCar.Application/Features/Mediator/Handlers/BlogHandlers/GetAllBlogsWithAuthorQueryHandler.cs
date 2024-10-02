@@ -27,7 +27,7 @@ namespace BookCar.Application.Features.Mediator.Handlers.BlogHandlers
                 Title = x.Title,
                 BlogDescription = x.BlogDescription,
                 AuthorDescription = x.Author.Description,
-                AuthorImaageUrl = x.Author.ImageUrl,
+                AuthorImageUrl = x.Author.ImageUrl,
             }).ToList();
         }
     }

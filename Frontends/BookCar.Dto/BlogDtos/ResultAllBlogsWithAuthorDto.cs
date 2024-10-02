@@ -19,7 +19,7 @@ namespace BookCar.Dto.BlogDtos
         public int CategoryId { get; set; }
         public string BlogDescription { get; set; }
         public string AuthorDescription { get; set; }
-        public string AuthorImaageUrl { get; set; }
+        public string AuthorImageUrl { get; set; }
 
     }
 }

@@ -416,6 +416,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "BookCar.WebApi.Controllers.CarPricingsController",
+    "Method": "GetCarPricingWithTimePeriodList",
+    "RelativePath": "api/CarPricings/GetCarPricingWithTimePeriodList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "BookCar.WebApi.Controllers.CarsController",
     "Method": "CarList",
     "RelativePath": "api/Cars",
@@ -1073,7 +1083,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "createReservationCommand",
+        "Name": "command",
         "Type": "BookCar.Application.Features.Mediator.Commands.ReservationCommands.CreateReservationCommand",
         "IsRequired": true
       }
