@@ -51,5 +51,13 @@ namespace BookCar.WebApi.Controllers
             var value = _repository.GetCommetByBlogId(id);
             return Ok(value);
         }
+
+        [HttpGet("CommentCountByBlog")]
+        public IActionResult CommentCountByBlog(int id) 
+        {
+            var value = _repository.GetCountCommentByBlog(id);
+            return Ok(value);
+        }
+
     }
 }

@@ -14,5 +14,6 @@ namespace BookCar.Application.Features.RepositoryPattern
         void Remove(T entity);
         T GetById(int id);
         List<T> GetCommetByBlogId(int id);
+        public int GetCountCommentByBlog(int id);
     }
 }

@@ -12,9 +12,9 @@
 
 
     <div class="pt-5 mt-5">
-        <h3 class="mb-5">6 Comments</h3>
+        <h3 class="mb-5">6 Yorum</h3>
         @* seçili bloğun içindeki yorumların listesini gösteren partial  *@
-        @await Component.InvokeAsync("_CommentListByBlogComponentPartial")  
+        @await Component.InvokeAsync("_CommentListByBlogComponentPartial", new {id=ViewBag.blogId})  
 
         @* seçili bloğa yorum eklemek için kullanılan partial *@
         @await Component.InvokeAsync("_AddCommentComponentPartial")

@@ -52,5 +52,10 @@ namespace BookCar.Persistence.Repositories.CommentRepositories
             _context.Comments.Update(entity);
             _context.SaveChanges();
         }
+
+        public int GetCountCommentByBlog(int id) 
+        {
+            return _context.Comments.Where(x => x.BlogId == id).Count();
+        }
     }
 }
