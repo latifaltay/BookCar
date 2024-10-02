@@ -28,7 +28,7 @@ namespace BookCar.Domain.Entities
         public Location PickUpLocation { get; set; }
         public Location DropOffLocation { get; set; }
 
-        //public Car Car { get; set; }
+        public Car Car { get; set; }
 
         //public string Status { get; set; }
     }

@@ -1065,6 +1065,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "BookCar.WebApi.Controllers.ReservationController",
+    "Method": "CreateReservation",
+    "RelativePath": "api/Reservation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createReservationCommand",
+        "Type": "BookCar.Application.Features.Mediator.Commands.ReservationCommands.CreateReservationCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "BookCar.WebApi.Controllers.ServicesController",
     "Method": "FeatureList",
     "RelativePath": "api/Services",
