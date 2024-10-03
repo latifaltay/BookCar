@@ -3237,6 +3237,10 @@
       "PackagePath": "staticwebassets\\carbook-master\\services.html"
     },
     {
+      "Id": "C:\\Users\\ELEYDEV\\Desktop\\BookCar\\Frontends\\BookCar.WebUI\\wwwroot\\chart.js",
+      "PackagePath": "staticwebassets\\chart.js"
+    },
+    {
       "Id": "C:\\Users\\ELEYDEV\\Desktop\\BookCar\\Frontends\\BookCar.WebUI\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

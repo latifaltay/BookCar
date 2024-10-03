@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "A32F21vR5rmtJsG717tuC+0XR0JcMEh9FiMjgD/S7is=",
+  "Hash": "I/21qBsxE2Vy4v1b7AZoKddCE2HG7X8mHGGOUL+JqE0=",
   "Source": "BookCar.WebUI",
   "BasePath": "_content/BookCar.WebUI",
   "Mode": "Default",
@@ -15405,6 +15405,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\carbook-master\\services.html"
+    },
+    {
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\BookCar\\Frontends\\BookCar.WebUI\\wwwroot\\chart.js",
+      "SourceId": "BookCar.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\BookCar\\Frontends\\BookCar.WebUI\\wwwroot\\",
+      "BasePath": "_content/BookCar.WebUI",
+      "RelativePath": "chart.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\chart.js"
     },
     {
       "Identity": "C:\\Users\\ELEYDEV\\Desktop\\BookCar\\Frontends\\BookCar.WebUI\\wwwroot\\css\\site.css",

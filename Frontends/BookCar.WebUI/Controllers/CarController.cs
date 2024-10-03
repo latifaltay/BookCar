@@ -31,5 +31,11 @@ namespace BookCar.WebUI.Controllers
             ViewBag.carid = id;
             return View();
         }
+
+        public async Task<IActionResult> CarDetail() 
+        {
+            return View();
+        }
+
     }
 }
