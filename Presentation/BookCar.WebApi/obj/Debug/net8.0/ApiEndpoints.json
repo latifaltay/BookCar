@@ -700,6 +700,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "BookCar.WebApi.Controllers.CommentsController",
+    "Method": "CreateCommentWithMediator",
+    "RelativePath": "api/Comments/CreateCommentWithMediator",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "BookCar.Application.Features.Mediator.Commands.CommentCommands.CreateCommentCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "BookCar.WebApi.Controllers.ContactsController",
     "Method": "ContactList",
     "RelativePath": "api/Contacts",

@@ -7,8 +7,8 @@ namespace BookCar.WebUI.ViewComponents.BlogViewComponents
 {
     public class _BlogDetailsMainComponentPartial(IHttpClientFactory _httpClientFactory) : ViewComponent
     {
-        public async Task<IViewComponentResult> InvokeAsync(int id) 
-        { 
+        public async Task<IViewComponentResult> InvokeAsync(int id)
+        {
             var client = _httpClientFactory.CreateClient();
             var responseMessage = await client.GetAsync($"https://localhost:7028/api/Blogs/" + id);
 
@@ -18,7 +18,6 @@ namespace BookCar.WebUI.ViewComponents.BlogViewComponents
                 var values = JsonConvert.DeserializeObject<GetBlogById>(jsonData);
                 return View(values);
             }
-
             return View();
         }
     }

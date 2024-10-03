@@ -1,5 +1,7 @@
-﻿using BookCar.Application.Features.RepositoryPattern;
+﻿using BookCar.Application.Features.Mediator.Commands.CommentCommands;
+using BookCar.Application.Features.RepositoryPattern;
 using BookCar.Domain.Entities;
+using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,7 +9,7 @@ namespace BookCar.WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CommentsController(IGenericRepository<Comment> _repository) : ControllerBase
+    public class CommentsController(IGenericRepository<Comment> _repository, IMediator _mediator) : ControllerBase
     {
         [HttpGet]
         public IActionResult CommentList() 
@@ -57,6 +59,13 @@ namespace BookCar.WebApi.Controllers
         {
             var value = _repository.GetCountCommentByBlog(id);
             return Ok(value);
+        }
+
+        [HttpPost("CreateCommentWithMediator")]
+        public async Task<IActionResult> CreateCommentWithMediator(CreateCommentCommand command)
+        {
+            await _mediator.Send(command);
+            return Ok("Yorum başarıyla eklendi");
         }
 
     }
