@@ -94,6 +94,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Db250YWN0XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/ELEYDEV/Desktop/BookCar/Frontends/BookCar.WebUI/Areas/Admin/Views/AdminDashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5EYXNoYm9hcmRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ELEYDEV/Desktop/BookCar/Frontends/BookCar.WebUI/Areas/Admin/Views/AdminFooterAddress/CreateFooterAddress.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Gb290ZXJBZGRyZXNzXENyZWF0ZUZvb3RlckFkZHJlc3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
