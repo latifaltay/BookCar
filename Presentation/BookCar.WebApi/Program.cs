@@ -7,21 +7,25 @@ using BookCar.Application.Features.CQRS.Handlers.ContactHandlers;
 using BookCar.Application.Features.RepositoryPattern;
 using BookCar.Application.Interfaces;
 using BookCar.Application.Interfaces.BlogInterfaces;
+using BookCar.Application.Interfaces.CarDescriptionInterfaces;
 using BookCar.Application.Interfaces.CarFeatureInterfaces;
 using BookCar.Application.Interfaces.CarInterfaces;
 using BookCar.Application.Interfaces.CarPricingInterfaces;
 using BookCar.Application.Interfaces.RentACarInterfaces;
+using BookCar.Application.Interfaces.ReviewInterfaces;
 using BookCar.Application.Interfaces.StatisticInterfaces;
 using BookCar.Application.Interfaces.TagCloudInterfaces;
 using BookCar.Application.Services;
 using BookCar.Persistence.Context;
 using BookCar.Persistence.Repositories;
 using BookCar.Persistence.Repositories.BlogRepositories;
+using BookCar.Persistence.Repositories.CarDescriptionRepositories;
 using BookCar.Persistence.Repositories.CarFeatureRepositories;
 using BookCar.Persistence.Repositories.CarPricingRepositories;
 using BookCar.Persistence.Repositories.CarRepositories;
 using BookCar.Persistence.Repositories.CommentRepositories;
 using BookCar.Persistence.Repositories.RentACarRepositories;
+using BookCar.Persistence.Repositories.ReviewRepositories;
 using BookCar.Persistence.Repositories.StatisticsRepositories;
 using BookCar.Persistence.Repositories.TagCloudRepositories;
 
@@ -38,6 +42,8 @@ builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(CommentRepositor
 builder.Services.AddScoped(typeof(IStatisticsRepository), typeof(StatisticsRepository));
 builder.Services.AddScoped(typeof(IRentACarRepository), typeof(RentACarRepository));
 builder.Services.AddScoped(typeof(ICarFeatureRepository), typeof(CarFeatureRepository));
+builder.Services.AddScoped(typeof(ICarDescriptionRepository), typeof(CarDescriptionRepository));
+builder.Services.AddScoped(typeof(IReviewRepository), typeof(ReviewRepository));
 
 builder.Services.AddScoped<GetAboutQueryHandler>();
 builder.Services.AddScoped<GetAboutByIdQueryHandler>();

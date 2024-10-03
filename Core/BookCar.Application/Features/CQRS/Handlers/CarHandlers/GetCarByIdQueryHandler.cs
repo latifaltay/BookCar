@@ -11,16 +11,8 @@ using System.Threading.Tasks;
 
 namespace BookCar.Application.Features.CQRS.Handlers.CarHandlers
 {
-    public class GetCarByIdQueryHandler
+    public class GetCarByIdQueryHandler(IRepository<Car> _repository)
     {
-        private readonly IRepository<Car> _repository;
-
-        public GetCarByIdQueryHandler(IRepository<Car> repository)
-        {
-            _repository = repository;
-        }
-
-
         public async Task<GetCarByIdQueryResult> Handle(GetCarByIdQuery query) 
         {
             var valeus = await _repository.GetByIdAsync(query.Id);
