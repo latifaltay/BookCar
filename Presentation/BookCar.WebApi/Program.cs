@@ -28,8 +28,27 @@ using BookCar.Persistence.Repositories.RentACarRepositories;
 using BookCar.Persistence.Repositories.ReviewRepositories;
 using BookCar.Persistence.Repositories.StatisticsRepositories;
 using BookCar.Persistence.Repositories.TagCloudRepositories;
+using FluentValidation.AspNetCore;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Reflection;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(opt =>
+{
+    opt.RequireHttpsMetadata = false;
+    opt.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidAudience = "https://localhost",
+        ValidIssuer = "https://localhost",
+        ClockSkew = TimeSpan.Zero,
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("bookcarbookcar34")),
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true
+    };
+});
 
 // Add services to the container.
 builder.Services.AddScoped<BookCarContext>();
@@ -51,6 +70,11 @@ builder.Services.AddScoped<CreateAboutCommandHandler>();
 builder.Services.AddScoped<UpdateAboutCommandHandler>();
 builder.Services.AddScoped<RemoveAboutCommandHandler>();
 
+
+builder.Services.AddControllers().AddFluentValidation(x =>
+{
+	x.RegisterValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+});
 
 
 builder.Services.AddScoped<GetBannerQueryHandler>();

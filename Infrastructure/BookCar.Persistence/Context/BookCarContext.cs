@@ -18,6 +18,8 @@ namespace BookCar.Persistence.Context
             //optionsBuilder.UseSqlServer("Server=DESKTOP-VCQ63AG; initial Catalog = BookCarDb; integrated Security = true; TrustServerCertificate = true ");
             optionsBuilder.UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB;; initial Catalog = BookCarDb; integrated Security = true; TrustServerCertificate = true ");
         }
+        public DbSet<AppUser> AppUsers { get; set; }
+        public DbSet<AppRole> AppRoles { get; set; }
         public DbSet<About> Abouts { get; set; }
         public DbSet<Banner> Banners { get; set; }
         public DbSet<Brand> Brands { get; set; }

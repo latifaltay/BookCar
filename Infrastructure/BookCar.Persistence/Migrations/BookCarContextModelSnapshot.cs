@@ -47,6 +47,61 @@ namespace BookCar.Persistence.Migrations
                     b.ToTable("Abouts");
                 });
 
+            modelBuilder.Entity("BookCar.Domain.Entities.AppRole", b =>
+                {
+                    b.Property<int>("AppRoleId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("AppRoleId"));
+
+                    b.Property<string>("AppRoleName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("AppRoleId");
+
+                    b.ToTable("AppRoles");
+                });
+
+            modelBuilder.Entity("BookCar.Domain.Entities.AppUser", b =>
+                {
+                    b.Property<int>("AppUserId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("AppUserId"));
+
+                    b.Property<int>("AppRoleId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Surname")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("AppUserId");
+
+                    b.HasIndex("AppRoleId");
+
+                    b.ToTable("AppUsers");
+                });
+
             modelBuilder.Entity("BookCar.Domain.Entities.Author", b =>
                 {
                     b.Property<int>("AuthorId")
@@ -736,6 +791,17 @@ namespace BookCar.Persistence.Migrations
                     b.ToTable("Testimonials");
                 });
 
+            modelBuilder.Entity("BookCar.Domain.Entities.AppUser", b =>
+                {
+                    b.HasOne("BookCar.Domain.Entities.AppRole", "AppRole")
+                        .WithMany("AppUsers")
+                        .HasForeignKey("AppRoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("AppRole");
+                });
+
             modelBuilder.Entity("BookCar.Domain.Entities.Blog", b =>
                 {
                     b.HasOne("BookCar.Domain.Entities.Author", "Author")
@@ -907,6 +973,11 @@ namespace BookCar.Persistence.Migrations
                         .IsRequired();
 
                     b.Navigation("Blog");
+                });
+
+            modelBuilder.Entity("BookCar.Domain.Entities.AppRole", b =>
+                {
+                    b.Navigation("AppUsers");
                 });
 
             modelBuilder.Entity("BookCar.Domain.Entities.Author", b =>

@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "5pXTuIp8jUc=",
+  "dgSpecHash": "Un+1ymRAVCM=",
   "success": true,
   "projectFilePath": "C:\\Users\\ELEYDEV\\Desktop\\BookCar\\Core\\BookCar.Application\\BookCar.Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ELEYDEV\\.nuget\\packages\\fluentvalidation\\11.10.0\\fluentvalidation.11.10.0.nupkg.sha512",
+    "C:\\Users\\ELEYDEV\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\ELEYDEV\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\ELEYDEV\\.nuget\\packages\\mediatr\\12.4.0\\mediatr.12.4.0.nupkg.sha512",
     "C:\\Users\\ELEYDEV\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\ELEYDEV\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
