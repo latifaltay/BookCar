@@ -24,7 +24,7 @@ namespace BookCar.Application.Features.Mediator.Handlers.AppUserHandlers
 			else 
 			{
 				values.IsExist = true;
-				values.Username = user.Username;
+				values.UserName = user.Username;
 				values.Role = (await _appRoleRepository.GetByFilterAsync(x => x.AppRoleId == user.AppRoleId)).AppRoleName;
 				values.Id = user.AppUserId;
 			}

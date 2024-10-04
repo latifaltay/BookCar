@@ -16,6 +16,7 @@ using BookCar.Application.Interfaces.ReviewInterfaces;
 using BookCar.Application.Interfaces.StatisticInterfaces;
 using BookCar.Application.Interfaces.TagCloudInterfaces;
 using BookCar.Application.Services;
+using BookCar.Application.Tools;
 using BookCar.Persistence.Context;
 using BookCar.Persistence.Repositories;
 using BookCar.Persistence.Repositories.BlogRepositories;
@@ -41,10 +42,10 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
     opt.RequireHttpsMetadata = false;
     opt.TokenValidationParameters = new TokenValidationParameters
     {
-        ValidAudience = "https://localhost",
-        ValidIssuer = "https://localhost",
+        ValidAudience = JwtTokenDefaults.ValidAudience,
+        ValidIssuer = JwtTokenDefaults.ValidIssuer,
         ClockSkew = TimeSpan.Zero,
-        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("bookcarbookcar34")),
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(JwtTokenDefaults.Key)),
         ValidateLifetime = true,
         ValidateIssuerSigningKey = true
     };
@@ -130,6 +131,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 

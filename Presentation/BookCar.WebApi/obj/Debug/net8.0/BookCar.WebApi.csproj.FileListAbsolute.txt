@@ -147,3 +147,4 @@ C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\obj\Debug\net8.0\re
 C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\bin\Debug\net8.0\FluentValidation.dll
 C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
 C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\ELEYDEV\Desktop\BookCar\Presentation\BookCar.WebApi\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

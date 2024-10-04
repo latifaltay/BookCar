@@ -1092,6 +1092,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "BookCar.WebApi.Controllers.LoginController",
+    "Method": "Index",
+    "RelativePath": "api/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "BookCar.Application.Features.Mediator.Queries.AppUserQueries.GetCheckAppUserQuery",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "BookCar.WebApi.Controllers.PricingsController",
     "Method": "PricingList",
     "RelativePath": "api/Pricings",
