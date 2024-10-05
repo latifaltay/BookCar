@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "I/21qBsxE2Vy4v1b7AZoKddCE2HG7X8mHGGOUL+JqE0=",
+  "Hash": "QT7gDmCAv5YURu6BUL7r1cmNy2tSNnJjKLxhtbj176c=",
   "Source": "BookCar.WebUI",
   "BasePath": "_content/BookCar.WebUI",
   "Mode": "Default",
@@ -16564,6 +16564,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\BookCar\\Frontends\\BookCar.WebUI\\wwwroot\\lib\\microsoft\\signalr\\dist\\browser\\signalr.js",
+      "SourceId": "BookCar.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\BookCar\\Frontends\\BookCar.WebUI\\wwwroot\\",
+      "BasePath": "_content/BookCar.WebUI",
+      "RelativePath": "lib/microsoft/signalr/dist/browser/signalr.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\microsoft\\signalr\\dist\\browser\\signalr.js"
+    },
+    {
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\BookCar\\Frontends\\BookCar.WebUI\\wwwroot\\lib\\microsoft\\signalr\\dist\\browser\\signalr.min.js",
+      "SourceId": "BookCar.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\BookCar\\Frontends\\BookCar.WebUI\\wwwroot\\",
+      "BasePath": "_content/BookCar.WebUI",
+      "RelativePath": "lib/microsoft/signalr/dist/browser/signalr.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\microsoft\\signalr\\dist\\browser\\signalr.min.js"
     }
   ]
 }
