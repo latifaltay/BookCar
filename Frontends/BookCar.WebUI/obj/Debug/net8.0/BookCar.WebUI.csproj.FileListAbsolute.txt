@@ -226,3 +226,11 @@ C:\Users\ELEYDEV\Desktop\BookCar\Frontends\BookCar.WebUI\obj\Debug\net8.0\refint
 C:\Users\ELEYDEV\Desktop\BookCar\Frontends\BookCar.WebUI\obj\Debug\net8.0\BookCar.WebUI.pdb
 C:\Users\ELEYDEV\Desktop\BookCar\Frontends\BookCar.WebUI\obj\Debug\net8.0\BookCar.WebUI.genruntimeconfig.cache
 C:\Users\ELEYDEV\Desktop\BookCar\Frontends\BookCar.WebUI\obj\Debug\net8.0\ref\BookCar.WebUI.dll
+C:\Users\ELEYDEV\Desktop\BookCar\Frontends\BookCar.WebUI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\ELEYDEV\Desktop\BookCar\Frontends\BookCar.WebUI\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\ELEYDEV\Desktop\BookCar\Frontends\BookCar.WebUI\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\ELEYDEV\Desktop\BookCar\Frontends\BookCar.WebUI\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\ELEYDEV\Desktop\BookCar\Frontends\BookCar.WebUI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\ELEYDEV\Desktop\BookCar\Frontends\BookCar.WebUI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\ELEYDEV\Desktop\BookCar\Frontends\BookCar.WebUI\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\ELEYDEV\Desktop\BookCar\Frontends\BookCar.WebUI\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

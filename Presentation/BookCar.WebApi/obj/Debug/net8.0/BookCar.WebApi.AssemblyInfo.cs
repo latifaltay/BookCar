@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BookCar.WebApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b1af71ac29b7cc50003c005b4930c8cc465e61b9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d5baac6dbed5cf3c4917bb1b0bbf978403228a6a")]
 [assembly: System.Reflection.AssemblyProductAttribute("BookCar.WebApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BookCar.WebApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
